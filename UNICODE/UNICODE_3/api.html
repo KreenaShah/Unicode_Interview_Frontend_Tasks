@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Calls Using Javascript</title>
+    <link rel="stylesheet" href="api.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- <script>
+            axios.get('https://api.covid19api.com/summary')
+            .then((response) => {
+              const objectData = response.data.Countries;
+              console.log(objectData)
+
+              let tableData = "";
+              objectData.map((values) => {
+                  tableData+= `<tr>
+                  <td>${values.Country}</td>
+                  <td>${values.NewConfirmed}</td>
+                  <td>${values.TotalRecovered}</td>
+                  <td>${values.TotalDeaths}</td>
+                  <td>${values.TotalConfirmed}</td>
+              </tr>`;  
+              });
+              console.log(tableData)
+              document.getElementById("table_body").innerHTML=tableData;
+            });
+    </script> -->
+
+    
+</head>
+<body>
+    <div class="main__container"><p class="main__Heading">COVID-19 Worldwide Statistics</p></div>
+    <div class="container">           
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>country_name</th>
+              <th>NewConfirmed</th>
+              <th>TotalRecovered</th>
+              <th>TotalDeaths</th>
+              <th>TotalConfirmed</th>
+            </tr>
+          </thead>
+          <tbody id="table_body">
+            <tr>
+              <td>India</td>
+              <td>952541368</td>
+              <td>9525413</td>
+              <td>95245</td>
+              <td>952541368</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- <script>
+          const options = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Key': 'b9c6180454mshec87da93d02c58bp147799jsn0aad6c752bfa',
+        'X-RapidAPI-Host': 'corona-virus-world-and-india-data.p.rapidapi.com'
+      }
+    };
+
+    fetch('https://corona-virus-world-and-india-data.p.rapidapi.com/api', options)
+      .then(response => response.json())
+      // .then(response => console.log(response))
+      .then((objectData)=>{console.log(objectData)} )
+      .catch(err => console.error(err));
+      
+      let tableData = "";
+      objectData.map((values) => {
+                  tableData+= `<tr>
+                  <td>${values.country_name}</td>
+                  <td>${values.cases}</td>
+                  <td>${values.active_cases}</td>
+                  <td>${values.new_cases}</td>
+                  <td>${values.total_recovered}</td>
+                  <td>${values.total_tests}</td>
+              </tr>`;  
+              });
+              console.log(tableData)
+              document.getElementById("table_body").innerHTML=tableData;
+    </script> -->
+
+    <script>
+      const options = {
+        method: 'GET',
+        headers: {
+          'X-RapidAPI-Key': 'b9c6180454mshec87da93d02c58bp147799jsn0aad6c752bfa',
+          'X-RapidAPI-Host': 'corona-virus-world-and-india-data.p.rapidapi.com'
+        }
+      };
+
+      function append(objectData) {
+        let tableData = "";
+        objectData.map((values) => {
+                    tableData+= `<tr>
+                    <td>${values.country_name}</td>
+                    <td>${values.cases}</td>
+                    <td>${values.active_cases}</td>
+                    <td>${values.new_cases}</td>
+                    <td>${values.total_recovered}</td>
+                    <td>${values.total_tests}</td>
+                </tr>`;  
+                });     
+                console.log(tableData)
+                document.getElementById("table_body").innerHTML=tableData;
+        return tableData;
+      }
+
+fetch('https://corona-virus-world-and-india-data.p.rapidapi.com/api', options)
+  .then(response => response.json())
+  
+  // .then(response => console.log(response))
+  .then((objectData)=>{append(objectData)} )
+  // append(objectData) 
+  .catch(err => console.error(err));
+  
+  
+</script>
+</body>
+</html>
+
+
+<!-- &nbsp; -->
+
+
+
+
+<!-- <table>
+
+    <thead>
+        <tr>
+            <th>Country</th>
+            <th>Cases</th>
+            <th>Death</th>
+            <th>Active</th>
+            <th>Recovered</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>C</td>
+            <td>C</td>
+            <td>C</td>
+            <td>C</td>
+            <td>C</td>
+        </tr>
+    </tbody>
+
+</table> -->

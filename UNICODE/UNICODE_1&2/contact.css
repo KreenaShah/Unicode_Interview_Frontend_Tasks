@@ -1,0 +1,124 @@
+:root {
+    --bg1 : #040406;
+    --bg2 : #323234;
+    --boxShadow : #010203;
+    --Shadow1 : #040406;
+    --Shadow2 : #444446;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg,var(--bg1),var(--bg2));
+}
+
+.contact__maincontainer {
+    background: linear-gradient(135deg,var(--bg1),var(--bg2));
+    box-shadow: 0 0 8px 6px var(--boxShadow);
+    border-radius: 30px;
+}
+
+.contact__container--mainText h1 {
+    padding: 1rem 2rem 2rem 5rem;
+    color: #777;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+.contact__container--details {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.contact__details {
+    margin-bottom: 1.5rem;
+}
+
+input{
+    background: none;
+    border: none;
+    outline: none;
+    padding-left: 6px;
+    color: #777;
+}
+#name , #num , #email, #mess {
+    /* width: 240px; */
+    padding-top: 0.3rem;
+    padding-left: 1rem;
+    height : 42px;
+    background: none;
+    font-size: 20px;
+    color: #777;
+    box-shadow: inset 4px 4px 8px var(--Shadow1), inset -4px -4px 8px var(--Shadow2);
+    border-radius: 16px;
+}
+
+#mess {
+    height : 100px;
+    background: none;
+    font-size: 18px;
+    color: #777;
+    box-shadow: inset 4px 4px 8px var(--Shadow1), inset -4px -4px 8px var(--Shadow2);
+    border-radius: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.container-contactMe__submit{
+    padding: 0.5rem 3.5rem;
+}
+
+.container-contactMe__submit button{
+    padding: 0.5rem 1rem;
+}
+
+#submit--but {
+    width : 140px;
+    height : 42px;
+    background: none;
+    border-radius: 32px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    box-shadow: inset 4px 4px 8px var(--Shadow2), inset -4px -4px 8px var(--Shadow1);
+    color: #777;
+}
+
+#mode{
+    margin-bottom:0rem;
+    margin-left: 7.5rem;
+}
+#mode button{
+    padding:6px;
+    border-radius:6px;
+    background:none;
+    border:none;
+    box-shadow:4px 4px 8px var(--Shadow1),-4px -4px 8px var(--Shadow2);
+    letter-spacing:1px;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+#mode button:hover{
+    transform:scale(1.1);
+}
+#mode button:active{
+    transform:scale(0.9);
+}
+#drk{
+    display:none;
+    color:#112;
+}
+#lt{
+    color:#777;
+}

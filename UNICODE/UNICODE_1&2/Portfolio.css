@@ -1,0 +1,2753 @@
+:root {
+    --theme1:  #ffcc99;
+    --white : white;
+    --black : black;
+    --theme2:  #ffcc99;
+    --theme3:  #ffcc99;
+  }
+
+.lightmode {
+    --white : black;
+    --black : white;
+    --theme1 : #D48166;
+    /* --theme2:  #ffcc99;
+    --theme3:  #ffcc99; */
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
+
+::selection {
+    background-color: #ffcc99;
+    color: #000;
+}
+
+::-webkit-scrollbar {
+    width : 1.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color:#fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--theme1);
+    border-radius:1rem;
+}
+
+body {
+    margin : 0;
+    padding :0;
+    border : 0;
+    outline : 0;
+    text-decoration: none;
+    background-color: var(--black);
+}
+
+.navbar__logo p {
+    margin: 0;
+}
+
+#portfolio__icon {
+    color:var(--white);
+}
+
+.navbar__logo p , .navbar__details {
+    font-size: 3rem;
+    color: var(--white);
+    margin-bottom: 0;
+}
+
+/* menuBar starts */
+.container-navbar__container {
+    position: fixed;
+    display : flex;
+    justify-content: space-between;
+    background-color:var(--black);
+    height : 6.1rem;
+    width: 100%;
+  
+}
+
+.navbar__logo {
+    padding : 1.5rem 0rem 0rem 2rem;
+    color: var(--white);
+}
+
+.navbar__menubar {
+    padding : 1.3rem 2rem 0rem 1rem;
+    text-decoration: none;
+}
+
+.navbar__menubar a {
+    text-decoration: none;
+}
+
+.navbar__details {
+    margin-right: 1.8rem;
+    font-weight:100;
+}
+
+.navbar__details:hover {
+    color:var(--theme1);
+    text-decoration: underline;
+}
+
+#sun__icon {
+    max-width:3rem;
+}
+/* menuBar ends */
+
+/* Header section starts */
+
+.container-header__container {
+    display: flex;
+    justify-content: center;
+    height : 68rem;
+}
+
+.container-header2__container {
+    margin-top : 20rem;
+    display: flex;
+    justify-content: space-around;
+    width : 70%;
+    height : 60%;
+    border-style: solid;
+    border-style:outset ;
+    background-color: var(--theme1);
+    border-radius: 3rem;
+    box-shadow: 1rem 1rem 1rem -0.1rem rgba(0,0,0,0.15),
+    -0.6rem -0.6rem 1rem -0.1rem rgba(255,255,255,0.7);
+    transition: transform .2s;
+}
+
+.container-header2__container:hover {
+    transform: scale(0.8);
+}
+
+.container-header3__container {
+    display : flex;
+    justify-content:space-around;
+}
+
+.header__text {
+    margin : 6rem 16rem 0rem 0rem;
+    text-align:justify;
+    transition: transform .2s;
+}
+
+.header__text:hover {
+    transform: scale(0.7);
+}
+
+.header__text--1 {
+    font-size : 2.5rem;
+    font-weight: 900;
+    padding : 0rem 0.2rem 0rem 0.2rem;
+    margin: 0rem;
+}
+
+.header__text--2 {
+    font-size :5rem;
+    font-weight: 1000;
+    margin: 0rem;
+    padding-bottom: 0.4rem;
+    animation: typing 6s steps(17) infinite;
+    overflow: hidden;
+    position: relative;
+}
+
+#loader {
+    position: relative;
+}
+
+@keyframes typing 
+{
+    0% , 90% ,100% 
+    {
+        width: 0;
+    }
+    30% , 60% 
+    {
+        width: 212.61px;
+    }
+}
+
+#loader::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    animation: blink 0.8s steps(3) infinite;
+}
+
+@keyframes blink
+{
+    0% , 75% 
+    {
+        opacity: 1;
+    }
+    75% , 100% 
+    {
+        opacity: 0;
+    }
+}
+
+.header__text--3 {
+    margin: 0rem;
+    font-size: 2em;
+}
+
+.header__CV {
+    margin-top: 3rem;
+    padding : 0.8rem;
+    font-weight:900;
+    border-radius: 1.5rem;
+    border-color: var(--theme1);
+    max-width: 55%;
+}
+
+#Downloadicon {
+    font-size:25px;
+}
+
+.img__responsive {
+    max-width: 100%;
+    width:230px;
+    height: auto;
+    margin-top: -5.5rem;
+    box-shadow: 1rem 1rem 1rem -0.1rem rgba(0,0,0,0.15),
+    -0.6rem -0.6rem 1rem -0.1rem rgba(255,255,255,0.7);
+    transition: transform .2s;
+}
+
+.img__responsive:hover {
+    transform: scale(1.1);
+}
+/* Header section ends */
+
+/* aboutMe section starts */
+
+#about {
+    align-items: center;
+}
+.container-aboutMe__container {
+    margin : 0;
+    height : 65rem;
+    padding-top: 9rem;
+    padding-right: 20rem;
+    padding-left: 20rem;
+}
+
+.container-aboutMe--mainText {
+    display: flex;
+    justify-content: center;
+    
+}
+.aboutMe--maintext {
+    border-style: groove;
+    border-style:outset ;
+    background-color: var(--theme1);
+    border-radius: 2rem;
+    margin: 5rem;
+    font-size : 4.5rem;
+    font-weight :700;
+    box-shadow: 0.6rem 0.6rem 1rem -0.1rem rgba(0,0,0,0.15),
+    -0.6rem -0.6rem 1rem -0.1rem rgba(255,255,255,0.7);
+}
+
+.aboutMe--text{
+    
+    font-size: 2em;
+    letter-spacing: 0.13rem;
+    padding-right: 7rem;
+    padding-left: 8.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--white);
+}
+
+.aboutMe--details {
+    padding-left: 8.5rem;
+    margin-top: 3rem;
+    font-size: 2.8rem;
+    font-weight:300;
+}
+
+.aboutMe--details p {
+    margin: 0;
+    margin-bottom: 1.2rem;
+}
+
+.aboutMe--phnNo , .aboutMe--email ,  .aboutMe--gitHub , .aboutMe--linkedIn{
+    text-decoration: none;
+    color: var(--theme1);
+}
+.aboutMe--email:link ,  .aboutMe--gitHub:link , .aboutMe--linkedIn:link {
+    color : var(--theme1);
+}
+
+ .aboutMe--email:active ,  .aboutMe--gitHub:active , .aboutMe--linkedIn:active {
+    color : var(--theme1);
+}
+
+.aboutMe--email:hover ,  .aboutMe--gitHub:hover , .aboutMe--linkedIn:hover {
+    color :#ffdace;
+}
+
+#aboutMe--phnNo , #aboutMe--email ,  #aboutMe--gitHub , #aboutMe--linkedIn {
+    color: var(--white);
+}
+
+.container-aboutMe__box {
+    display : flex;
+    justify-content :space-around;
+    padding-left: 10rem;
+    padding-right: 10rem;
+} 
+
+.box1 , .box2 , .box3 , .box4 {
+    border-style: groove;
+    border-style:outset ;
+    background-color: var(--theme1);
+    margin-top: 3rem;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    
+    padding-right: 1.5rem;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-radius: 0.8rem;
+    text-align: center;
+    font-size:2rem;
+    font-weight: 600;
+    box-shadow: 0.6rem 0.6rem 1rem -0.1rem rgba(0,0,0,0.15),
+    -0.6rem -0.6rem 1rem -0.1rem rgba(255,255,255,0.7);
+    transition: transform .2s;
+} 
+.box1:hover , .box2:hover , .box3:hover , .box4:hover {
+    transform: scale(0.7);
+}
+
+/* aboutMe section end */
+
+/* myJourney section starts */
+.container-myJourney__container {
+    margin-top: 18rem;
+    display : flex;
+    flex: 1 1;
+    justify-content:space-around;
+    padding-bottom: 6rem;
+}
+
+.container__education {
+    width : 40rem;
+    padding-left: 4rem;
+}
+
+.edu--mainText--container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.education--maintext {
+    margin-top: 0;
+    font-size: 4.5rem;
+    font-weight :800;
+    box-shadow: 0.6rem 0.6rem 1rem -0.1rem rgba(0,0,0,0.15),
+    -0.6rem -0.6rem 1rem -0.1rem rgba(255,255,255,0.7);
+    border-style: groove;
+    border-style:outset ;
+    background-color: var(--theme1);
+    border-radius: 1rem;
+}
+
+.education--box {
+    border-left-style: solid;
+    margin-left: 1.5rem;
+    margin-bottom: 4.5rem;
+    color: var(--white);
+}
+
+#graduationCap {
+    font-size:3.6rem;
+    margin-left:-2.2rem;
+    color: var(--white);
+}
+
+.year {
+    font-size: 1.9rem;
+    font-weight: 300;
+    margin-left: 3.3rem;
+    margin-top:-3rem;
+}
+
+.name {
+    margin-left:2.8rem;
+    font-weight: 300;
+    font-size:2.5rem;
+    margin-bottom:0;
+    margin-top:0;
+}
+
+.result {
+    margin-left:2.6rem;
+    font-weight :1000;
+    font-size:3.2rem;
+    margin-top:0.7rem;
+    color:var(--theme1)
+}
+
+.workExp--mainText--container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.workExp--maintext {
+    margin-top: 0;
+    font-size: 4.5rem;
+    font-weight :800;
+    box-shadow: 0.6rem 0.6rem 1rem -0.1rem rgba(0,0,0,0.15),
+    -0.6rem -0.6rem 1rem -0.1rem rgba(255,255,255,0.7);
+    border-style: groove;
+    border-style:outset ;
+    background-color: var(--theme1);
+    border-radius: 1rem;
+}
+
+.container__workExp1 {
+    border-left-style: solid;
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+    margin-bottom: 8rem;
+    color: var(--white);
+}
+
+.container__workExp2 {
+    border-left-style: solid;
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+    margin-top: 4.5rem;
+    color: var(--white);
+}
+
+#bulletin {
+    font-size:2rem;
+    margin-left:-1.2rem;
+}
+
+.period {
+    font-size: 2.3rem;
+    font-weight :300;
+    margin-left:2.25rem;
+    margin-top:-1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.org {
+    margin-left:1.9rem;
+    font-weight :800;
+    font-size: 3.5rem;
+    margin-bottom:0;
+    margin-top:0;
+    padding-bottom: 0.7rem;
+    color:var(--theme1)
+}
+
+.work {
+    margin-left:2rem;
+    font-weight: 300;
+    font-size:2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    word-spacing: 0.2rem;
+}
+/* myJourney section end */
+
+/* skills section start */
+.container-skills__container {
+    padding-top: 2rem;
+    height : 67rem;
+    display : flex;
+    justify-content :center;
+}
+
+.techSkill--mainText__container {
+    display: flex;
+    justify-content: center;
+}
+
+.maintext--techSkills {
+    margin-top: 0;
+    font-size: 4.5rem;
+    font-weight :800;
+    box-shadow: 0.6rem 0.6rem 1rem -0.1rem rgba(0,0,0,0.15),
+    -0.6rem -0.6rem 1rem -0.1rem rgba(255,255,255,0.7);
+    margin-bottom: 3.6rem;
+    border-style: groove;
+    border-style:outset ;
+    background-color: var(--theme1);
+    border-radius: 1rem;
+}
+
+.techSkill--heading {
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    font-weight:400;
+    color: var(--white);
+}
+
+.progressBar {
+    width : 72rem;
+    height : 1rem;
+    box-shadow: 0.6rem 0.6rem 1rem -0.1rem rgba(0,0,0,0.15),
+    -0.6rem -0.6rem 1rem -0.1rem rgba(255,255,255,0.7);
+    border-radius: 3.6rem;
+}
+
+.progress {
+    height : 1rem;
+    border-radius: 3.6rem;
+    width : 0%;
+    background: var(--theme1)
+}
+
+#html {
+    animation: html 1s linear forwards ;
+}
+
+@keyframes html {
+    100% {
+        width : 93%;
+    }
+} 
+
+#css {
+    animation: css 1s linear forwards ;
+}
+
+@keyframes css {
+    100% {
+        width : 80%;
+    }
+}
+
+#javascript {
+    animation: javascript 1s linear forwards ;
+}
+
+@keyframes javascript {
+    100% {
+        width : 54%;
+    }
+}
+
+#react {
+    animation: react 1s linear forwards ;
+}
+
+@keyframes react {
+    100% {
+        width : 40%;
+    }
+}
+
+#django {
+    animation: django 1s linear forwards ;
+}
+
+@keyframes django {
+    100% {
+        width : 23%;
+    }
+}
+
+#c {
+    animation: c 1s linear forwards ;
+}
+
+@keyframes c {
+    100% {
+        width : 85%;
+    }
+}
+
+#python {
+    animation: python 1s linear forwards ;
+}
+
+@keyframes python {
+    100% {
+        width : 72%;
+    }
+}
+
+.percentage {
+    align-items: center;
+    font-size: 1.2rem;
+    height : 2.5rem;
+    width : 2.5rem;
+    border-radius: 50%;
+    background: var(--theme1);
+    color : var(--theme1);
+    float : right;
+    margin-top: -0.8rem;
+    z-index: -1;
+}
+/* skills section end */
+
+/* responsiveness start */
+@media all and (min-width:2560px )  {
+        .container-navbar__container {
+            height: 60px;
+        }
+        .navbar__logo p{
+            font-size: 6rem;
+        }
+        .navbar__details {
+            font-size: 6rem;
+            padding-right: 2rem;
+        }
+        .container-header2__container {
+            margin-top : 45rem;
+            height: 90rem;
+            box-shadow: 1rem 1rem 1rem -0.1rem rgba(0,0,0,0.15),
+            -0.6rem -0.6rem 1rem -0.1rem rgba(255,255,255,0.7);
+        }
+        .header__text{
+            margin: 0;
+            padding-right: 30rem;
+            padding-top: 10rem;
+        }
+        .header__text--1 {
+            font-size: 6rem;
+        }
+        .header__text--2 {
+            font-size: 15rem;
+            margin:0;
+            width:500px;
+        }
+        .header__text--3 {
+            font-size: 5rem;
+        }
+        .header__CV {
+            padding:4rem;
+            font-size: 5rem;
+        }
+        .img__responsive {
+            height:850px;
+            width: 450px;
+        }
+        .container-aboutMe__container {
+            height : 1200px;
+            padding-top:120rem;
+        }
+        .aboutMe--maintext {
+            font-size: 12rem;
+        }
+        .aboutMe--text {
+            font-size: 5rem;
+        }
+        .aboutMe--details {
+            margin-top: 10rem;
+        }
+        #aboutMe--phnNo , #aboutMe--email ,#aboutMe--gitHub , #aboutMe--linkedIn {
+            font-size: 7rem;
+        }
+        .container-aboutMe__box {
+            padding-top: 5rem;
+        }
+        .box1 , .box2 , .box3 , .box4 {
+            height:20rem;
+            width:20rem;
+            font-size: 5rem;
+        }
+        .container-myJourney__container {
+            height:1200px;
+        }
+        .container__education {
+            width:100rem;
+        }
+        .education--maintext {
+            font-size: 12rem;
+        }
+        #graduationCap {
+            font-size: 12rem;
+            margin-left: -7rem;
+        }
+        .year {
+            font-size: 4rem;
+            margin-top: -7rem;
+            margin-left: 9rem;
+        }
+        .name {
+            font-size:5.5rem;
+            margin-left: 9rem;
+        }
+        .result {
+            font-size: 8rem;
+            margin-left: 9rem;
+        }
+        #bulletin {
+            font-size: 5rem;
+            margin-left: -2.7rem;
+        }
+        .period {
+            font-size: 4rem;
+            margin-top: -4rem;
+            margin-left: 9rem;
+            margin-bottom: 2rem;
+        }
+        .org {
+            font-size: 8rem;
+            margin-left: 9rem;
+        }
+        .work {
+            font-size:5.5rem;
+            margin-left: 9rem;
+        }
+        .maintext--techSkills {
+            font-size: 12rem;
+        }
+        .container-skills__container {
+            height:158rem;
+        }
+        .techSkill--heading {
+            font-size: 7rem;
+        }
+        .progressBar {
+            width:170rem;
+            height:2rem;
+        }
+        .progress {
+            height:2rem;
+        }
+        .percentage {
+            height : 5rem;
+            width : 5rem;
+            margin-top : -2rem;
+        }
+}
+
+@media all and (min-width:1900px )  {
+    .container-navbar__container {
+        height: 60px;
+    }
+    .navbar__logo p{
+        font-size: 6rem;
+    }
+    .navbar__details {
+        font-size: 6rem;
+    }
+    .container-header2__container {
+        margin-top : 45rem;
+        height: 90rem;
+        box-shadow: 1rem 1rem 1rem -0.1rem rgba(0,0,0,0.15),
+        -0.6rem -0.6rem 1rem -0.1rem rgba(255,255,255,0.7);
+    }
+    .header__text{
+        margin: 0;
+        padding-right: 30rem;
+        padding-top: 10rem;
+    }
+    .header__text--1 {
+        font-size: 6rem;
+    }
+    .header__text--2 {
+        font-size: 15rem;
+        margin:0;
+        width:500px;
+    }
+    .header__text--3 {
+        font-size: 5rem;
+    }
+    .header__CV {
+        padding:4rem;
+        font-size: 5rem;
+    }
+    .img__responsive {
+        height:850px;
+        width: 450px;
+    }
+    .container-aboutMe__container {
+        height : 1200px;
+        padding-top:120rem;
+    }
+    .aboutMe--maintext {
+        font-size: 12rem;
+    }
+    .aboutMe--text {
+        font-size: 5rem;
+    }
+    .aboutMe--details {
+        margin-top: 10rem;
+    }
+    #aboutMe--phnNo , #aboutMe--email ,#aboutMe--gitHub , #aboutMe--linkedIn {
+        font-size: 7rem;
+    }
+    .container-aboutMe__box {
+        padding-top: 5rem;
+    }
+    .box1 , .box2 , .box3 , .box4 {
+        height:20rem;
+        width:20rem;
+        font-size: 5rem;
+    }
+    .container-myJourney__container {
+        height:1200px;
+    }
+    .container__education {
+        width:100rem;
+    }
+    .education--maintext {
+        font-size: 12rem;
+    }
+    #graduationCap {
+        font-size: 12rem;
+        margin-left: -7rem;
+    }
+    .year {
+        font-size: 4rem;
+        margin-top: -7rem;
+        margin-left: 9rem;
+    }
+    .name {
+        font-size:5.5rem;
+        margin-left: 9rem;
+    }
+    .result {
+        font-size: 8rem;
+        margin-left: 9rem;
+    }
+    .workExp--mainText--container {
+        height:213px;
+    }
+    .workExp--maintext {
+        font-size: 12rem;
+        height : 120px;
+        margin:0;
+        padding:0;
+    }
+    #bulletin {
+        font-size: 5rem;
+        margin-left: -2.7rem;
+    }
+    .period {
+        font-size: 4rem;
+        margin-top: -4rem;
+        margin-left: 9rem;
+        margin-bottom: 2rem;
+    }
+    .org {
+        font-size: 8rem;
+        margin-left: 9rem;
+    }
+    .work {
+        font-size:5.5rem;
+        margin-left: 9rem;
+    }
+    .maintext--techSkills {
+        font-size: 12rem;
+    }
+    .container-skills__container {
+        height:158rem;
+        margin-top: 20rem;
+    }
+    .techSkill--heading {
+        font-size: 7rem;
+    }
+    .progressBar {
+        width:170rem;
+        height:2rem;
+    }
+    .progress {
+        height:2rem;
+    }
+    .percentage {
+        height : 5rem;
+        width : 5rem;
+        margin-top : -2rem;
+    }
+}
+
+@media all and (min-width:1400px )  {
+    .container-navbar__container {
+        height: 60px;
+    }
+    .navbar__logo p{
+        font-size: 5rem;
+    }
+    .navbar__details {
+        font-size: 5rem;
+    }
+    .container-header2__container {
+        margin-top : 40rem;
+        height: 90rem;
+        box-shadow: 1rem 1rem 1rem -0.1rem rgba(0,0,0,0.15),
+        -0.6rem -0.6rem 1rem -0.1rem rgba(255,255,255,0.7);
+    }
+    .header__text{
+        margin: 0;
+        padding-right: 10rem;
+        padding-top: 10rem;
+    }
+    .header__text--1 {
+        font-size: 6rem;
+    }
+    .header__text--2 {
+        font-size: 15rem;
+        margin:0;
+        width:500px;
+    }
+    .header__text--3 {
+        font-size: 4rem;
+    }
+    .header__CV {
+        padding:4rem;
+        font-size: 5rem;
+    }
+    .img__responsive {
+        height:850px;
+        width: 450px;
+        margin-bottom: 6rem;
+    }
+    .container-aboutMe__container {
+        height : 1200px;
+        padding-top:105rem;
+        padding-bottom: 10rem;
+    }
+    .aboutMe--maintext {
+        font-size: 10rem;
+    }
+    .aboutMe--text {
+        font-size: 4.5rem;
+        word-spacing: 0.5rem;
+    }
+    .aboutMe--details {
+        margin-top: 10rem;
+    }
+    #aboutMe--phnNo , #aboutMe--email ,#aboutMe--gitHub , #aboutMe--linkedIn {
+        font-size: 6.3rem;
+    }
+    .container-aboutMe__box {
+        padding-top: 5rem;
+    }
+    .box1 , .box2 , .box3 , .box4 {
+        height:18rem;
+        width:18rem;
+        font-size: 5rem;
+    }
+    .container-myJourney__container {
+        height:1000px;
+        margin-right: 4rem;
+        margin-left: 4rem;
+    }
+    .container__education {
+        width:100rem;
+    }
+    .education--maintext {
+        font-size: 10rem;
+    }
+    #graduationCap {
+        font-size: 12rem;
+        margin-left: -7rem;
+    }
+    .year {
+        font-size: 3rem;
+        margin-top: -7rem;
+        margin-left: 9rem;
+    }
+    .name {
+        font-size:4.5rem;
+        margin-left: 9rem;
+    }
+    .result {
+        font-size: 6.5rem;
+        margin-left: 9rem;
+    }
+    .workExp--mainText--container {
+        height: 97px;
+    }
+    .workExp--maintext {
+        font-size: 10rem;
+        height : 97px;
+        margin:0 0;
+        padding-top: 0rem;
+        margin-bottom:100rem;
+    }
+    #bulletin {
+        font-size: 5rem;
+        margin-left: -2.7rem;
+    }
+    .period {
+        font-size: 3rem;
+        margin-top: -4rem;
+        margin-left: 9rem;
+        margin-bottom: 2rem;
+    }
+    .org {
+        font-size: 6.5rem;
+        margin-left: 9rem;
+    }
+    .work {
+        font-size:4.5rem;
+        margin-left: 9rem;
+    }
+    .maintext--techSkills {
+        font-size: 10rem;
+        margin-bottom: 10rem;
+    }
+    .container-skills__container {
+        height:158rem;
+        margin-top: 20rem;
+    }
+    .techSkill--heading {
+        font-size: 6rem;
+    }
+    .progressBar {
+        width:150rem;
+        height:2rem;
+    }
+    .progress {
+        height:2rem;
+    }
+    .percentage {
+        height : 5rem;
+        width : 5rem;
+        margin-top : -2rem;
+    }
+}
+
+@media all and (max-width:1300px )  {
+    .container-navbar__container {
+        height: 60px;
+    }
+    .navbar__logo p{
+        font-size: 6rem;
+    }
+    .navbar__details {
+        font-size: 5rem;
+    }
+    .container-header2__container {
+        margin-top : 50rem;
+        height: 80rem;
+        box-shadow: 1rem 1rem 1rem -0.1rem rgba(0,0,0,0.15),
+        -0.6rem -0.6rem 1rem -0.1rem rgba(255,255,255,0.7);
+    }
+    .header__text{
+        margin: 0;
+        padding-right: 10rem;
+        padding-top: 10rem;
+    }
+    .header__text--1 {
+        font-size: 6rem;
+    }
+    .header__text--2 {
+        font-size: 15rem;
+        margin:0;
+        width:500px;
+    }
+    .header__text--3 {
+        font-size: 4rem;
+    }
+    .header__CV {
+        /* padding:2rem; */
+        font-size: 4rem;
+    }
+    .img__responsive {
+        height:800px;
+        width: 480px;
+        margin-top: -10rem;
+        margin-bottom: 6rem;
+    }
+    .container-aboutMe__container {
+        height : 1200px;
+        padding-top:105rem;
+        padding-bottom: 10rem;
+    }
+    .aboutMe--maintext {
+        font-size: 10rem;
+    }
+    .aboutMe--text {
+        font-size: 4rem;
+        word-spacing: 0.5rem;
+    }
+    .aboutMe--details {
+        margin-top: 10rem;
+    }
+    #aboutMe--phnNo , #aboutMe--email ,#aboutMe--gitHub , #aboutMe--linkedIn {
+        font-size: 6.3rem;
+    }
+    .container-aboutMe__box {
+        padding-top: 5rem;
+    }
+    .box1 , .box2 , .box3 , .box4 {
+        height:18rem;
+        width:18rem;
+        font-size: 5rem;
+    }
+    .container-myJourney__container {
+        height:1200px;
+        margin-top: 20rem;
+        margin-bottom: 20rem;
+        margin-right: 4rem;
+        margin-left: 4rem;
+    }
+    .container__education {
+        width:100rem;
+    }
+    .education--maintext {
+        font-size: 10rem;
+    }
+    #graduationCap {
+        font-size: 12rem;
+        margin-left: -7rem;
+    }
+    .year {
+        font-size: 3rem;
+        margin-top: -7rem;
+        margin-left: 9rem;
+    }
+    .name {
+        font-size:4.5rem;
+        margin-left: 9rem;
+    }
+    .result {
+        font-size: 6.5rem;
+        margin-left: 9rem;
+    }
+    .workExp--mainText--container {
+        height: 97px;
+        margin-bottom: 13rem;
+    }
+    .workExp--maintext {
+        font-size: 10rem;
+        height : 97px;
+        margin:0 0;
+        padding-top: 0rem;
+        margin-bottom:100rem;
+    }
+    #bulletin {
+        font-size: 5rem;
+        margin-left: -2.7rem;
+    }
+    .period {
+        font-size: 4rem;
+        margin-top: -4rem;
+        margin-left: 9rem;
+        margin-bottom: 2rem;
+    }
+    .org {
+        font-size: 6.5rem;
+        margin-left: 9rem;
+    }
+    .work {
+        font-size:4.5rem;
+        margin-left: 9rem;
+    }
+    .maintext--techSkills {
+        font-size: 10rem;
+        margin-bottom: 10rem;
+    }
+    .container-skills__container {
+        height:158rem;
+        margin-top: 20rem;
+    }
+    .techSkill--heading {
+        font-size: 6rem;
+    }
+    .progressBar {
+        width:120rem;
+        height:2rem;
+    }
+    .progress {
+        height:2rem;
+    }
+    .percentage {
+        height : 5rem;
+        width : 5rem;
+        margin-top : -2rem;
+    }
+}
+
+@media all and (max-width:1270px )  {
+    .container-navbar__container {
+        height: 60px;
+    }
+    .navbar__logo p{
+        font-size: 6rem;
+    }
+    .navbar__details {
+        font-size: 5rem;
+    }
+    .container-header2__container {
+        margin-top : 45rem;
+        height: 80rem;
+        box-shadow: 1rem 1rem 1rem -0.1rem rgba(0,0,0,0.15),
+        -0.6rem -0.6rem 1rem -0.1rem rgba(255,255,255,0.7);
+    }
+    .header__text{
+        margin: 0;
+        padding-right: 10rem;
+        padding-top: 10rem;
+    }
+    .header__text--1 {
+        font-size: 6rem;
+    }
+    .header__text--2 {
+        font-size: 15rem;
+        margin:0;
+        width:500px;
+    }
+    .header__text--3 {
+        font-size: 4rem;
+    }
+    .header__CV {
+        font-size: 4rem;
+    }
+    .img__responsive {
+        height:700px;
+        width: 450px;
+        margin-top: -4rem;
+        margin-bottom: 6rem;
+    }
+    .container-aboutMe__container {
+        height : 1200px;
+        padding-top:105rem;
+        padding-bottom: 10rem;
+    }
+    .aboutMe--maintext {
+        font-size: 9rem;
+    }
+    .aboutMe--text {
+        font-size: 3.7rem;
+        word-spacing: 0.8rem;
+    }
+    .aboutMe--details {
+        margin-top: 10rem;
+    }
+    #aboutMe--phnNo , #aboutMe--email ,#aboutMe--gitHub , #aboutMe--linkedIn {
+        font-size: 5.8rem;
+    }
+    .container-aboutMe__box {
+        padding-top: 5rem;
+    }
+    .box1 , .box2 , .box3 , .box4 {
+        height:18rem;
+        width:18rem;
+        font-size: 5rem;
+        margin-right: 5rem;
+    }
+    .container-myJourney__container {
+        height:900px;
+        margin-top: 20rem;
+        margin-bottom: 20rem;
+        margin-right: 4rem;
+        margin-left: 4rem;
+    }
+    .container__education {
+        width:110rem;
+        margin-right: 5rem;
+    }
+    .education--maintext {
+        font-size: 8rem;
+    }
+    #graduationCap {
+        font-size: 12rem;
+        margin-left: -7rem;
+    }
+    .year {
+        font-size: 3rem;
+        margin-top: -7rem;
+        margin-left: 9rem;
+    }
+    .name {
+        font-size:4rem;
+        margin-left: 9rem;
+    }
+    .result {
+        font-size: 6rem;
+        margin-left: 9rem;
+    }
+    .workExp--mainText--container {
+        height: 97px;
+    }
+    .workExp--maintext {
+        font-size: 8rem;
+        height : 97px;
+        margin:0 0;
+        padding-top: 0rem;
+        margin-bottom:100rem;
+    }
+    #bulletin {
+        font-size: 5rem;
+        margin-left: -2.7rem;
+    }
+    .period {
+        font-size: 4rem;
+        margin-top: -4rem;
+        margin-left: 9rem;
+        margin-bottom: 2rem;
+    }
+    .org {
+        font-size: 6.5rem;
+        margin-left: 9rem;
+    }
+    .work {
+        font-size:4rem;
+        margin-left: 9rem;
+    }
+    .maintext--techSkills {
+        font-size: 8rem;
+        margin-bottom: 10rem;
+        margin-top: 15rem;
+    }
+    .container-skills__container {
+        height:160rem;
+    }
+    .techSkill--heading {
+        font-size: 5.5rem;
+    }
+    .progressBar {
+        width:120rem;
+        height:2rem;
+    }
+    .progress {
+        height:2rem;
+    }
+    .percentage {
+        height : 5rem;
+        width : 5rem;
+        margin-top : -2rem;
+    }
+}
+
+@media all and (max-width:1200px )  {
+    .container-navbar__container {
+        height: 60px;
+    }
+    .navbar__logo p{
+        font-size: 6rem;
+    }
+    .navbar__details {
+        font-size: 5rem;
+    }
+    .container-header2__container {
+        margin-top : 45rem;
+        height: 80rem;
+        box-shadow: 1rem 1rem 1rem -0.1rem rgba(0,0,0,0.15),
+        -0.6rem -0.6rem 1rem -0.1rem rgba(255,255,255,0.7);
+    }
+    .header__text{
+        margin: 0;
+        padding-right: 10rem;
+        padding-top: 10rem;
+    }
+    .header__text--1 {
+        font-size: 6rem;
+    }
+    .header__text--2 {
+        font-size: 15rem;
+        margin:0;
+        width:500px;
+    }
+    .header__text--3 {
+        font-size: 4rem;
+    }
+    .header__CV {
+        font-size: 4rem;
+    }
+    .img__responsive {
+        height:700px;
+        width: 450px;
+        margin-top: -4rem;
+        margin-bottom: 6rem;
+    }
+    .container-aboutMe__container {
+        height : 1200px;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        padding-top:105rem;
+        padding-bottom: 10rem;
+    }
+    .aboutMe--maintext {
+        font-size: 9rem;
+    }
+    .aboutMe--text {
+        font-size: 3.7rem;
+        word-spacing: 0.8rem;
+    }
+    .aboutMe--details {
+        margin-top: 10rem;
+    }
+    #aboutMe--phnNo , #aboutMe--email ,#aboutMe--gitHub , #aboutMe--linkedIn {
+        font-size: 5.8rem;
+    }
+    .container-aboutMe__box {
+        padding-top: 5rem;
+        margin-left: 4rem;
+    }
+    .box1 , .box2 , .box3 , .box4 {
+        height:18rem;
+        width:18rem;
+        font-size: 5rem;
+        margin-right: 5rem;
+    }
+    .container-myJourney__container {
+        height:900px;
+        margin-top: 20rem;
+        margin-bottom: 20rem;
+        margin-right: 4rem;
+        margin-left: 4rem;
+    }
+    .container__education {
+        width:110rem;
+        margin-right: 5rem;
+    }
+    .education--maintext {
+        font-size: 8rem;
+    }
+    #graduationCap {
+        font-size: 12rem;
+        margin-left: -7rem;
+    }
+    .year {
+        font-size: 3rem;
+        margin-top: -7rem;
+        margin-left: 9rem;
+    }
+    .name {
+        font-size:4rem;
+        margin-left: 9rem;
+    }
+    .result {
+        font-size: 6rem;
+        margin-left: 9rem;
+    }
+    .workExp--mainText--container {
+        height: 97px;
+    }
+    .workExp--maintext {
+        font-size: 8rem;
+        height : 97px;
+        margin:0 0;
+        padding-top: 0rem;
+        margin-bottom:100rem;
+    }
+    #bulletin {
+        font-size: 5rem;
+        margin-left: -2.7rem;
+    }
+    .period {
+        font-size: 4rem;
+        margin-top: -4rem;
+        margin-left: 9rem;
+        margin-bottom: 2rem;
+    }
+    .org {
+        font-size: 6.5rem;
+        margin-left: 9rem;
+    }
+    .work {
+        font-size:4rem;
+        margin-left: 9rem;
+    }
+    .maintext--techSkills {
+        font-size: 8rem;
+        margin-bottom: 10rem;
+        margin-top: 15rem;
+    }
+    .container-skills__container {
+        height:160rem;
+    }
+    .techSkill--heading {
+        font-size: 5.5rem;
+    }
+    .progressBar {
+        width:120rem;
+        height:2rem;
+    }
+    .progress {
+        height:2rem;
+    }
+    .percentage {
+        height : 5rem;
+        width : 5rem;
+        margin-top : -2rem;
+    }
+}
+
+@media all and (max-width:1100px)  {
+    .container-navbar__container {
+        height: 60px;
+    }
+    .navbar__logo p{
+        font-size: 6rem;
+    }
+    .navbar__details {
+        font-size: 5rem;
+    }
+    .container-header2__container {
+        margin-top : 45rem;
+        height: 80rem;
+        box-shadow: 1rem 1rem 1rem -0.1rem rgba(0,0,0,0.15),
+        -0.6rem -0.6rem 1rem -0.1rem rgba(255,255,255,0.7);
+    }
+    .header__text{
+        margin: 0;
+        padding-right: 10rem;
+        padding-top: 10rem;
+    }
+    .header__text--1 {
+        font-size: 6rem;
+    }
+    .header__text--2 {
+        font-size: 15rem;
+        margin:0;
+        width:500px;
+    }
+    .header__text--3 {
+        font-size: 4rem;
+    }
+    .header__CV {
+        font-size: 4rem;
+    }
+    .img__responsive {
+        height:600px;
+        width: 370px;
+        margin-top: -4rem;
+        margin-bottom: 6rem;
+    }
+    .container-aboutMe__container {
+        height : 900px;
+        padding-top:105rem;
+    }
+    .aboutMe--maintext {
+        font-size: 9rem;
+    }
+    .aboutMe--text {
+        font-size: 3.7rem;
+        word-spacing: 0.8rem;
+    }
+    .aboutMe--details {
+        margin-top: 10rem;
+    }
+    #aboutMe--phnNo , #aboutMe--email ,#aboutMe--gitHub , #aboutMe--linkedIn {
+        font-size: 5.8rem;
+    }
+    .container-aboutMe__box {
+        padding-top: 5rem;
+    }
+    .box1 , .box2 , .box3 , .box4 {
+        height:18rem;
+        width:18rem;
+        font-size: 5rem;
+        margin-right: 5rem;
+    }
+    .container-myJourney__container {
+        height:900px;
+        margin-top: 20rem;
+        margin-right: 4rem;
+        margin-left: 4rem;
+    }
+    .container__education {
+        width:110rem;
+        margin-right: 5rem;
+    }
+    .education--maintext {
+        font-size: 8rem;
+    }
+    #graduationCap {
+        font-size: 12rem;
+        margin-left: -7rem;
+    }
+    .year {
+        font-size: 3rem;
+        margin-top: -7rem;
+        margin-left: 9rem;
+    }
+    .name {
+        font-size:4rem;
+        margin-left: 9rem;
+    }
+    .result {
+        font-size: 6rem;
+        margin-left: 9rem;
+    }
+    .workExp--mainText--container {
+        height: 97px;
+    }
+    .workExp--maintext {
+        font-size: 8rem;
+        height : 97px;
+        margin:0 0;
+        padding-top: 0rem;
+        margin-bottom:100rem;
+    }
+    #bulletin {
+        font-size: 5rem;
+        margin-left: -2.7rem;
+    }
+    .period {
+        font-size: 4rem;
+        margin-top: -4rem;
+        margin-left: 9rem;
+        margin-bottom: 2rem;
+    }
+    .org {
+        font-size: 6.5rem;
+        margin-left: 9rem;
+    }
+    .work {
+        font-size:4rem;
+        margin-left: 9rem;
+    }
+    .maintext--techSkills {
+        font-size: 8rem;
+        margin-bottom: 10rem;
+    }
+    .container-skills__container {
+        height:160rem;
+        margin-top: -15rem;
+    }
+    .techSkill--heading {
+        font-size: 5.5rem;
+    }
+    .progressBar {
+        width:120rem;
+        height:2rem;
+    }
+    .progress {
+        height:2rem;
+    }
+    .percentage {
+        height : 5rem;
+        width : 5rem;
+        margin-top : -2rem;
+    }
+}
+
+@media all and (max-width:900px)  {
+    .container-navbar__container {
+        height: 60px;
+    }
+    .navbar__logo p{
+        font-size: 4.5rem;
+    }
+    .navbar__details {
+        font-size: 4.5rem;
+    }
+    .container-header2__container {
+        margin-top : 45rem;
+        height: 80rem;
+        box-shadow: 1rem 1rem 1rem -0.1rem rgba(0,0,0,0.15),
+        -0.6rem -0.6rem 1rem -0.1rem rgba(255,255,255,0.7);
+    }
+    .header__text{
+        margin: 0;
+        padding-right: 10rem;
+        padding-top: 10rem;
+    }
+    .header__text--1 {
+        font-size: 6rem;
+    }
+    .header__text--2 {
+        font-size: 15rem;
+        margin:0;
+        width:500px;
+    }
+    .header__text--3 {
+        font-size: 3rem;
+    }
+    .header__CV {
+        font-size: 3rem;
+    }
+    .img__responsive {
+        height:600px;
+        width: 400px;
+        margin-top: -7rem;
+        margin-bottom: 6rem;
+    }
+    .container-aboutMe__container {
+        height : 900px;
+        padding-top:90rem;
+    }
+    .aboutMe--maintext {
+        font-size: 9rem;
+    }
+    .aboutMe--text {
+        font-size: 3.7rem;
+        word-spacing: 0.8rem;
+    }
+    .aboutMe--details {
+        margin-top: 10rem;
+    }
+    #aboutMe--phnNo , #aboutMe--email ,#aboutMe--gitHub , #aboutMe--linkedIn {
+        font-size: 5.8rem;
+    }
+    .container-aboutMe__box {
+        padding-top: 5rem;
+    }
+    .box1 , .box2 , .box3 , .box4 {
+        height:18rem;
+        width:18rem;
+        font-size: 5rem;
+        margin-right: 5rem;
+    }
+    .container-myJourney__container {
+        height:900px;
+        margin-top: 20rem;
+        margin-right: 4rem;
+        margin-left: 4rem;
+    }
+    .container__education {
+        width:110rem;
+        margin-right: 5rem;
+    }
+    .education--maintext {
+        font-size: 8rem;
+    }
+    #graduationCap {
+        font-size: 12rem;
+        margin-left: -7rem;
+    }
+    .year {
+        font-size: 3rem;
+        margin-top: -7rem;
+        margin-left: 9rem;
+    }
+    .name {
+        font-size:4rem;
+        margin-left: 9rem;
+    }
+    .result {
+        font-size: 6rem;
+        margin-left: 9rem;
+    }
+    .workExp--mainText--container {
+        height: 65px;
+    }
+    .workExp--maintext {
+        font-size: 8rem;
+        height : 65px;
+        margin:0 0;
+    }
+    #bulletin {
+        font-size: 5rem;
+        margin-left: -2.7rem;
+    }
+    .period {
+        font-size: 4rem;
+        margin-top: -4rem;
+        margin-left: 9rem;
+        margin-bottom: 2rem;
+    }
+    .org {
+        font-size: 6.5rem;
+        margin-left: 9rem;
+    }
+    .work {
+        font-size:4rem;
+        margin-left: 9rem;
+    }
+    .maintext--techSkills {
+        font-size: 8rem;
+        margin-bottom: 10rem;
+    }
+    .container-skills__container {
+        height:160rem;
+        margin-top: -15rem;
+    }
+    .techSkill--heading {
+        font-size: 5.5rem;
+    }
+    .progressBar {
+        width:120rem;
+        height:2rem;
+    }
+    .progress {
+        height:2rem;
+    }
+    .percentage {
+        height : 5rem;
+        width : 5rem;
+        margin-top : -2rem;
+    }
+}
+
+@media all and (max-width:800px)  {
+    .container-navbar__container {
+        height: 60px;
+    }
+    .navbar__logo p{
+        font-size: 4rem;
+    }
+    .navbar__details {
+        font-size: 4rem;
+    }
+    .container-header2__container {
+        margin-top : 45rem;
+        height: 80rem;
+        box-shadow: 1rem 1rem 1rem -0.1rem rgba(0,0,0,0.15),
+        -0.6rem -0.6rem 1rem -0.1rem rgba(255,255,255,0.7);
+    }
+    .header__text{
+        margin: 0;
+        padding-right: 10rem;
+        padding-top: 10rem;
+    }
+    .header__text--1 {
+        font-size: 6rem;
+    }
+    .header__text--2 {
+        font-size: 15rem;
+        margin:0;
+        width:500px;
+    }
+    .header__text--3 {
+        font-size: 3rem;
+    }
+    .header__CV {
+        font-size: 2.5rem;
+    }
+    .img__responsive {
+        height:600px;
+        width: 400px;
+        margin-top: -7rem;
+        margin-bottom: 6rem;
+    }
+    .container-aboutMe__container {
+        height : 900px;
+        padding-top:90rem;
+    }
+    .aboutMe--maintext {
+        font-size: 9rem;
+    }
+    .aboutMe--text {
+        font-size: 3.7rem;
+        word-spacing: 0.8rem;
+    }
+    .aboutMe--details {
+        margin-top: 10rem;
+    }
+    #aboutMe--phnNo , #aboutMe--email ,#aboutMe--gitHub , #aboutMe--linkedIn {
+        font-size: 5.8rem;
+    }
+    .container-aboutMe__box {
+        padding-top: 5rem;
+    }
+    .box1 , .box2 , .box3 , .box4 {
+        height:18rem;
+        width:18rem;
+        font-size: 5rem;
+        margin-right: 5rem;
+    }
+    .container-myJourney__container {
+        height:900px;
+        margin-top: 30rem;
+        margin-right: 4rem;
+        margin-left: 4rem;
+    }
+    .container__education {
+        width:110rem;
+        margin-right: 5rem;
+    }
+    .education--maintext {
+        font-size: 7rem;
+    }
+    #graduationCap {
+        font-size: 12rem;
+        margin-left: -7rem;
+    }
+    .year {
+        font-size: 3rem;
+        margin-top: -7rem;
+        margin-left: 9rem;
+    }
+    .name {
+        font-size:4rem;
+        margin-left: 9rem;
+    }
+    .result {
+        font-size: 5rem;
+        margin-left: 9rem;
+    }
+    .workExp--mainText--container {
+        height: 60px;
+    }
+    .workExp--maintext {
+        font-size: 7rem;
+        height : 65px;
+    }
+    #bulletin {
+        font-size: 5rem;
+        margin-left: -2.7rem;
+    }
+    .period {
+        font-size: 4rem;
+        margin-top: -4rem;
+        margin-left: 9rem;
+        margin-bottom: 2rem;
+    }
+    .org {
+        font-size: 6.5rem;
+        margin-left: 9rem;
+    }
+    .work {
+        font-size:4rem;
+        margin-left: 9rem;
+    }
+    .maintext--techSkills {
+        font-size: 8rem;
+        margin-bottom: 10rem;
+    }
+    .container-skills__container {
+        height:160rem;
+        margin-top: -15rem;
+    }
+    .techSkill--heading {
+        font-size: 5.5rem;
+    }
+    .progressBar {
+        width:100rem;
+        height:2rem;
+    }
+    .progress {
+        height:2rem;
+    }
+    .percentage {
+        height : 5rem;
+        width : 5rem;
+        margin-top : -2rem;
+    }
+}
+
+@media all and (max-width:700px)  {
+    .container-navbar__container {
+        height: 60px;
+    }
+    .navbar__logo p{
+        font-size: 4rem;
+    }
+    .navbar__details {
+        font-size: 4rem;
+    }
+    .container-header2__container {
+        margin-top : 45rem;
+        height: 80rem;
+        box-shadow: 1rem 1rem 1rem -0.1rem rgba(0,0,0,0.15),
+        -0.6rem -0.6rem 1rem -0.1rem rgba(255,255,255,0.7);
+    }
+    .header__text{
+        margin: 0;
+        padding-right: 10rem;
+        padding-top: 10rem;
+    }
+    .header__text--1 {
+        font-size: 6rem;
+    }
+    .header__text--2 {
+        font-size: 15rem;
+        margin:0;
+        width:500px;
+    }
+    .header__text--3 {
+        font-size: 3rem;
+    }
+    .header__CV {
+        font-size: 2.5rem;
+    }
+    .img__responsive {
+        height:600px;
+        width: 400px;
+        margin-top: -7rem;
+        margin-bottom: 6rem;
+    }
+    .container-aboutMe__container {
+        height : 900px;
+        padding-top:100rem;
+        padding-bottom:50rem;
+    }
+    .aboutMe--maintext {
+        font-size: 9rem;
+    }
+    .aboutMe--text {
+        font-size: 3.7rem;
+        word-spacing: 0.8rem;
+    }
+    .aboutMe--details {
+        margin-top: 10rem;
+    }
+    #aboutMe--phnNo , #aboutMe--email ,#aboutMe--gitHub , #aboutMe--linkedIn {
+        font-size: 5.8rem;
+    }
+    .container-aboutMe__box {
+        padding-top: 5rem;
+        margin-left: 10rem;
+    }
+    .box1 , .box2 , .box3 , .box4 {
+        height:15rem;
+        width:15rem;
+        font-size: 5rem;
+        margin-right: 5rem;
+    }
+
+    .box__text {
+        margin-top:1.5rem;
+    }
+
+    .container-myJourney__container {
+        height:900px;
+        margin-top: 15rem;
+        margin-right: 4rem;
+        margin-left: 4rem;
+    }
+    .container__education {
+        width:110rem;
+        margin-right: 5rem;
+    }
+    .education--maintext {
+        font-size: 6rem;
+    }
+    #graduationCap {
+        font-size: 12rem;
+        margin-left: -7rem;
+    }
+    .year {
+        font-size: 3rem;
+        margin-top: -7rem;
+        margin-left: 9rem;
+    }
+    .name {
+        font-size:4rem;
+        margin-left: 9rem;
+    }
+    .result {
+        font-size: 5rem;
+        margin-left: 9rem;
+    }
+    .workExp--mainText--container {
+        height: 60px;
+    }
+    .workExp--maintext {
+        font-size: 6rem;
+        height : 65px;
+    }
+    #bulletin {
+        font-size: 5rem;
+        margin-left: -2.7rem;
+    }
+    .period {
+        font-size: 4rem;
+        margin-top: -4rem;
+        margin-left: 9rem;
+        margin-bottom: 2rem;
+    }
+    .org {
+        font-size: 6.5rem;
+        margin-left: 9rem;
+    }
+    .work {
+        font-size:4rem;
+        margin-left: 9rem;
+    }
+    .maintext--techSkills {
+        font-size: 7rem;
+        margin-bottom: 10rem;
+    }
+    .container-skills__container {
+        height:160rem;
+        margin-top: -8rem;
+    }
+    .techSkill--heading {
+        font-size: 5.5rem;
+    }
+    .progressBar {
+        width:90rem;
+        height:2rem;
+    }
+    .progress {
+        height:2rem;
+    }
+    .percentage {
+        height : 5rem;
+        width : 5rem;
+        margin-top : -2rem;
+    }
+}
+
+@media all and (max-width:683px)  {
+    .container-navbar__container {
+        height: 60px;
+    }
+    .navbar__logo p{
+        font-size: 4rem;
+    }
+    .navbar__details {
+        font-size: 4rem;
+    }
+    .container-header2__container {
+        margin-top : 45rem;
+        height: 80rem;
+        box-shadow: 1rem 1rem 1rem -0.1rem rgba(0,0,0,0.15),
+        -0.6rem -0.6rem 1rem -0.1rem rgba(255,255,255,0.7);
+    }
+    .header__text{
+        margin: 0;
+        padding-right: 10rem;
+        padding-top: 10rem;
+    }
+    .header__text--1 {
+        font-size: 6rem;
+    }
+    .header__text--2 {
+        font-size: 15rem;
+        margin:0;
+        width:500px;
+    }
+    .header__text--3 {
+        font-size: 3rem;
+    }
+    .header__CV {
+        font-size: 2.5rem;
+    }
+    .img__responsive {
+        height:600px;
+        width: 400px;
+        margin-top: -7rem;
+        margin-bottom: 6rem;
+    }
+    .container-aboutMe__container {
+        height : 900px;
+        padding-top:100rem;
+        padding-bottom:50rem;
+    }
+    .aboutMe--maintext {
+        font-size: 9rem;
+    }
+    .aboutMe--text {
+        font-size: 3.7rem;
+        word-spacing: 0.8rem;
+    }
+    .aboutMe--details {
+        margin-top: 10rem;
+    }
+    #aboutMe--phnNo , #aboutMe--email ,#aboutMe--gitHub , #aboutMe--linkedIn {
+        font-size: 5.8rem;
+    }
+    .container-aboutMe__box {
+        padding-top: 5rem;
+        margin-left: 10rem;
+    }
+    .box1 , .box2 , .box3 , .box4 {
+        height:15rem;
+        width:15rem;
+        font-size: 5rem;
+        margin-right: 5rem;
+    }
+
+    .box__text {
+        margin-top:1.5rem;
+    }
+
+    .container-myJourney__container {
+        height:900px;
+        margin-top: 15rem;
+        margin-right: 4rem;
+        margin-left: 4rem;
+    }
+    .container__education {
+        width:110rem;
+        margin-right: 5rem;
+    }
+    .education--maintext {
+        font-size: 6rem;
+    }
+    #graduationCap {
+        font-size: 12rem;
+        margin-left: -7rem;
+    }
+    .year {
+        font-size: 3rem;
+        margin-top: -7rem;
+        margin-left: 9rem;
+    }
+    .name {
+        font-size:4rem;
+        margin-left: 9rem;
+    }
+    .result {
+        font-size: 5rem;
+        margin-left: 9rem;
+    }
+    .workExp--mainText--container {
+        height: 60px;
+    }
+    .workExp--maintext {
+        font-size: 6rem;
+        height : 65px;
+    }
+    #bulletin {
+        font-size: 5rem;
+        margin-left: -2.7rem;
+    }
+    .period {
+        font-size: 4rem;
+        margin-top: -4rem;
+        margin-left: 9rem;
+        margin-bottom: 2rem;
+    }
+    .org {
+        font-size: 6.5rem;
+        margin-left: 9rem;
+    }
+    .work {
+        font-size:4rem;
+        margin-left: 9rem;
+    }
+    .maintext--techSkills {
+        font-size: 7rem;
+        margin-bottom: 10rem;
+    }
+    .container-skills__container {
+        height:160rem;
+        margin-top: -8rem;
+    }
+    .techSkill--heading {
+        font-size: 5.5rem;
+    }
+    .progressBar {
+        width:90rem;
+        height:2rem;
+    }
+    .progress {
+        height:2rem;
+    }
+    .percentage {
+        height : 5rem;
+        width : 5rem;
+        margin-top : -2rem;
+    }
+}
+
+@media all and (max-width:682px)  {
+    /* .container-navbar__container {
+        height: 60px;
+    } */
+    .navbar__logo p{
+        font-size: 3.5rem;
+    }
+     .navbar__details {
+        font-size: 3.5rem;
+    }
+    /*.container-header2__container {
+        margin-top : 45rem;
+        height: 80rem;
+        box-shadow: 1rem 1rem 1rem -0.1rem rgba(0,0,0,0.15),
+        -0.6rem -0.6rem 1rem -0.1rem rgba(255,255,255,0.7);
+    }
+    .header__text{
+        margin: 0;
+        padding-right: 10rem;
+        padding-top: 10rem;
+    }
+    .header__text--1 {
+        font-size: 6rem;
+    }
+    .header__text--2 {
+        font-size: 15rem;
+        margin:0;
+        width:500px;
+    }
+    .header__text--3 {
+        font-size: 3rem;
+    }*/
+    .header__CV {
+        font-size: 1.7rem;
+    }
+    /*.img__responsive {
+        height:600px;
+        width: 400px;
+        margin-top: -7rem;
+        margin-bottom: 6rem;
+    }
+    .container-aboutMe__container {
+        height : 900px;
+        padding-top:100rem;
+        padding-bottom:50rem;
+    }
+    .aboutMe--maintext {
+        font-size: 9rem;
+    }
+    .aboutMe--text {
+        font-size: 3.7rem;
+        word-spacing: 0.8rem;
+    }
+    .aboutMe--details {
+        margin-top: 10rem;
+    }*/
+    #aboutMe--phnNo , #aboutMe--email ,#aboutMe--gitHub , #aboutMe--linkedIn {
+        font-size: 5rem;
+    }
+    /*.container-aboutMe__box {
+        padding-top: 5rem;
+        margin-left: 10rem;
+    }*/
+    .box1 , .box2 , .box3 , .box4 {
+        height:12rem;
+        width:12rem;
+        font-size: 4rem;
+        margin-right: 5rem;
+    }
+
+    /*.box__text {
+        margin-top:1.5rem;
+    }
+
+    .container-myJourney__container {
+        height:900px;
+        margin-top: 15rem;
+        margin-right: 4rem;
+        margin-left: 4rem;
+    }
+    .container__education {
+        width:110rem;
+        margin-right: 5rem;
+    }
+    .education--maintext {
+        font-size: 6rem;
+    }
+    #graduationCap {
+        font-size: 12rem;
+        margin-left: -7rem;
+    }
+    .year {
+        font-size: 3rem;
+        margin-top: -7rem;
+        margin-left: 9rem;
+    }
+    .name {
+        font-size:4rem;
+        margin-left: 9rem;
+    }
+    .result {
+        font-size: 5rem;
+        margin-left: 9rem;
+    }
+    .workExp--mainText--container {
+        height: 60px;
+    }*/
+    .workExp--maintext {
+        font-size: 6rem;
+        height : 50px;
+    }
+    /*#bulletin {
+        font-size: 5rem;
+        margin-left: -2.7rem;
+    }
+    .period {
+        font-size: 4rem;
+        margin-top: -4rem;
+        margin-left: 9rem;
+        margin-bottom: 2rem;
+    }
+    .org {
+        font-size: 6.5rem;
+        margin-left: 9rem;
+    }
+    .work {
+        font-size:4rem;
+        margin-left: 9rem;
+    }
+    .maintext--techSkills {
+        font-size: 7rem;
+        margin-bottom: 10rem;
+    }
+    .container-skills__container {
+        height:160rem;
+        margin-top: -8rem;
+    }
+    .techSkill--heading {
+        font-size: 5.5rem;
+    }
+    .progressBar {
+        width:90rem;
+        height:2rem;
+    }
+    .progress {
+        height:2rem;
+    }
+    .percentage {
+        height : 5rem;
+        width : 5rem;
+        margin-top : -2rem;
+    } */
+}
+
+@media all and (max-width:473px)  {
+    /* .container-navbar__container {
+        height: 60px;
+    } */
+    .navbar__logo p{
+        padding-top: 0.5rem;
+        font-size: 2.5rem;
+    }
+     .navbar__details {
+        font-size: 2.5rem;
+    }
+    .container-header2__container {
+        padding-top : 0rem;
+        margin-top : 35rem;
+        /* margin-left: 0rem; */
+        /* padding-bottom: 0; */
+        height: 65rem;
+        /* box-shadow: 1rem 1rem 1rem -0.1rem rgba(0,0,0,0.15),
+        -0.6rem -0.6rem 1rem -0.1rem rgba(255,255,255,0.7); */
+    }
+    /* .header__text{
+        margin: 0;
+        padding-right: 10rem;
+        padding-top: 10rem;
+    } */
+    .header__text--1 {
+        font-size: 4rem;
+    }
+    .header__text--2 {
+        font-size: 7rem;
+        /* margin:0; */
+        /* width:500px; */
+    }
+    .header__text--3 {
+        font-size: 1.5rem;
+    }
+    .header__CV {
+        font-size: 1rem;
+    }
+    .img__responsive {
+        height:500px;
+        width: 300px;
+        /* margin-top: -7rem;
+        margin-bottom: 6rem; */
+    }
+    .container-aboutMe__container {
+        /* height : 900px; */
+        padding-top:60rem;
+        padding-right:0rem;
+        /* margin-left: 5rem; */
+        padding-left: 0;
+        padding-bottom: 20rem;
+    }
+    .aboutMe--maintext {
+        font-size: 7rem;
+    }
+    .aboutMe--text {
+        font-size: 3rem;
+        /* word-spacing: 0.8rem; */
+    }
+    /* .aboutMe--details {
+        margin-top: 10rem;
+    } */
+    #aboutMe--phnNo , #aboutMe--email ,#aboutMe--gitHub , #aboutMe--linkedIn {
+        font-size: 3.5rem;
+    }
+    /* .container-aboutMe__box {
+        padding-top: 5rem;
+        margin-left: 10rem;
+    } */
+    .box1 , .box2 , .box3 , .box4 {
+        height:8rem;
+        width:8rem;
+        font-size: 3rem;
+        /* margin-right: 5rem; */
+    }
+
+    .box__text {
+        margin-top:1rem;
+    }
+
+    .container-myJourney__container {
+        /* height:900px; */
+        /* margin-top: 15rem; */
+        margin-right: 4rem;
+        margin-left: 5rem;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    /* .container__education {
+        width:110rem;
+        margin-right: 5rem;
+    } */
+    .education--maintext {
+        font-size: 5rem;
+    }
+    #graduationCap {
+        font-size: 8rem;
+        margin-left: -5.5rem;
+    }
+    .year {
+        font-size: 2rem;
+        margin-top: -6rem;
+        /* margin-left: 9rem; */
+    }
+    .name {
+        font-size:3rem;
+        /* margin-left: 9rem; */
+    }
+    .result {
+        font-size: 4rem;
+        /* margin-left: 9rem; */
+    }
+    .workExp--mainText--container {
+        /* padding-bottom: 0; */
+        margin-bottom: 0;
+    }
+    .workExp--maintext {
+        font-size: 4rem;
+        height : 40px;
+    }
+    #bulletin {
+        font-size: 3rem;
+        margin-left: -1.8rem;
+    }
+    .period {
+        font-size: 2rem;
+        /* margin-top: -4rem;
+        margin-left: 9rem;
+        margin-bottom: 2rem; */
+    }
+    .org {
+        font-size: 4rem;
+        /* margin-left: 9rem; */
+    }
+    .work {
+        font-size:3rem;
+        /* margin-left: 9rem; */
+    }
+    .maintext--techSkills {
+        font-size: 5rem;
+        /* margin-bottom: 10rem; */
+        /* padding-top: 0; */
+        margin-top: 0;
+    }
+    .container-skills__container {
+        height:110rem;
+        /* margin-top: -8rem; */
+    }
+    .techSkill--heading {
+        font-size: 4rem;
+        /* margin-left: 2rem; */
+    }
+    .progressBar {
+        width:60rem;
+        height:1rem;
+    }
+    .progress {
+        height:2rem;
+    }
+    .percentage {
+        height : 5rem;
+        width : 5rem;
+        margin-top : -2rem;
+    }
+}
+
+@media all and (max-width:320px)  {
+    .container-navbar__container {
+        height: 40px;
+    }
+    .navbar__logo p{
+        font-size: 1.7rem;
+    }
+     .navbar__details {
+        font-size: 1.7rem;
+    }
+    .container-header__container {
+        width: 400px;
+    }
+    .container-header2__container {
+        margin-top : 25rem;
+        height: 60rem;
+    }
+    .container-header3__container {
+        width:100%;
+    }
+    /* .header__text{
+        margin: 0;
+        padding-right: 10rem;
+        padding-top: 10rem;
+    } */
+    .header__text--1 {
+        font-size: 3rem;
+    }
+    .header__text--2 {
+        font-size: 5rem;
+        /* margin:0; */
+        /* width:500px; */
+    }
+    .header__text--3 {
+        font-size: 1.5rem;
+    }
+    /* .header__CV {
+        font-size: 1rem;
+    } */
+    /* .img__responsive {
+        height:500px;
+        width: 300px;
+        margin-top: -7rem;
+        margin-bottom: 6rem;
+    } */
+    .container-aboutMe__container {
+        /* height : 900px; */
+        padding-top:50rem;
+        /* padding-right:0rem; */
+        /* margin-left: 5rem; */
+        padding-left: 0;
+        padding-bottom: 20rem;
+        width: 400px;
+    }
+    /* .aboutMe--maintext {
+        font-size: 7rem;
+    } */
+    .aboutMe--text {
+        font-size: 3rem;
+        /* word-spacing: 0.8rem; */
+    }
+    /* .aboutMe--details {
+        margin-top: 10rem;
+    } */
+    #aboutMe--phnNo , #aboutMe--email ,#aboutMe--gitHub , #aboutMe--linkedIn {
+        font-size: 3rem;
+    }
+    /* .container-aboutMe__box {
+        padding-top: 5rem;
+        margin-left: 10rem;
+    } */
+    .box1 , .box2 , .box3 , .box4 {
+        height:7rem;
+        width:7rem;
+        font-size: 2rem;
+        /* margin-right: 5rem; */
+    }
+
+    .box__text {
+        margin-top:1rem;
+    }
+
+    .container-myJourney__container {
+        height:750px;
+        /* margin-top: 15rem; */
+        margin-right: 4rem;
+        margin-left: 2rem;
+        margin-bottom: 0;
+        margin-top: 0;
+        width: 400px;
+    }
+    /* .container__education {
+        width:110rem;
+        margin-right: 5rem;
+    } */
+    .education--maintext {
+        font-size: 4rem;
+    }
+    #graduationCap {
+        font-size: 6rem;
+        margin-left: -3rem;
+    }
+    .year {
+        font-size: 1.5rem;
+        /* margin-top: -6rem; */
+        /* margin-left: 9rem; */
+    }
+    .name {
+        font-size:2.5rem;
+        /* margin-left: 9rem; */
+    }
+    .result {
+        font-size: 3rem;
+        /* margin-left: 9rem; */
+    }
+    .workExp--mainText--container {
+        /* padding-bottom: 0; */
+        margin-bottom: 0;
+    }
+    .workExp--maintext {
+        font-size: 3rem;
+        height : 30px;
+    }
+    #bulletin {
+        font-size: 3rem;
+        margin-left: -1.8rem;
+    }
+    .period {
+        font-size: 1rem;
+        margin-top: -3rem;
+        /* margin-left: 9rem; */
+        /* margin-bottom: 2rem; */
+    }
+    .org {
+        font-size: 3rem;
+        /* margin-left: 9rem; */
+    }
+    .work {
+        font-size:2rem;
+        /* margin-left: 9rem; */
+    }
+    .maintext--techSkills {
+        font-size: 4rem;
+        /* margin-bottom: 10rem; */
+        /* padding-top: 0; */
+        margin-top: 0;
+    }
+    .container-skills__container {
+        height:110rem;
+        margin-left: 13rem;
+    }
+    .techSkill--heading {
+        font-size: 4rem;
+        /* margin-left: 2rem; */
+    }
+    .progressBar {
+        width:50rem;
+        height:0.7rem;
+    }
+    .progress {
+        height:1rem;
+    }
+    .percentage {
+        height : 5rem;
+        width : 5rem;
+        margin-top : -2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width:320px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media all and (min-width:768px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media(max-width:1098px) {
+    html {
+        font-size: 40%;
+    }
+}
+/* responsiveness end */

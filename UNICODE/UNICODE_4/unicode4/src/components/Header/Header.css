@@ -1,0 +1,92 @@
+*{
+    width: 750px;
+    margin: 0 auto;
+}
+
+.header__mainContainer img {
+    max-height: 220px;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.header__mainText--container {
+    margin-top: 0.3rem;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 1rem;
+    border-top-color: rgb(87, 85, 85);
+    border-top-width: 1rem;
+    border-top-style: solid;
+}
+
+.header__mainText--container h2 {
+    padding-top: 0.3rem;
+    background-color: #fff;
+}
+
+.header__mainText--container p {
+    background-color: #fff;
+}
+
+.header__text1 {
+    padding-top: 0.7rem;
+}
+.header__text2 {
+    padding-bottom: 0.7rem;
+}
+
+.header__mainText--container p b {
+    background-color: #fff;
+}
+
+.header__mainText--container p span {
+    background-color: #fff;
+    color: blue;
+}
+
+.userDetails {
+    margin-top: 0.8rem;
+    padding-top: 1rem;
+    height: 170px;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+input {
+    outline: none;
+    padding: 0.5rem;
+    border: none;
+}
+
+.name , .sap {
+    background-color: #fff;
+    border-block-end-style: groove;
+    align-items: center;
+    width:90%;
+    margin-left: 0.8rem;
+  
+}
+
+form p  {
+    background-color: #fff;
+    font-weight: 700;
+}
+
+.sapp {
+    padding-top: 1rem;
+}
+
+.startButton--container {
+    margin-top: 0.5rem;
+    background-color: #fff;
+    width: 20%;
+}
+
+.startButton {
+    background-color: #fff;
+    border: none;
+    height: 2rem;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 900;
+}

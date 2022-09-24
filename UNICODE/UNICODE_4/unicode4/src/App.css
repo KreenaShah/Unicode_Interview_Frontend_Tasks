@@ -1,0 +1,12 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(209, 209, 209);
+}
+
+.App {
+    min-height: 98.5vh;
+    margin: 5px;
+    padding: 5px;
+}

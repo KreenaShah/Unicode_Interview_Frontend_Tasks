@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <script>
+        function validate()
+        {
+            var username = document.getElementById("Iname").value;
+            var phn = document.getElementById("Inum").value;
+            var Email = document.getElementById("Iemail").value;
+            
+            var regName = /^[a-zA-Z\-]+$/;
+            if(username.trim()=="" || !regName.test(username))
+            {
+                alert("Please enter valid Username.");
+                return false;
+            }
+            
+            var regPhn = /^[7-9][0-9]{9}$/;
+            // var regPhn = /^\d{10}$/; 
+            if (phn.trim() =="" || !regPhn.test(phn)) {
+                    alert("Please enter valid phone number.");
+                    return false;
+                }
+            // ^ square bracket ke bahar hai that means immediate start
+            // ^ square bracket ke andar hai that means except this
+            // {curly brackets me jo number likha hai , uske immediate left side vali condition utni baar repeat honi chahiye}
+            // $ means end
+
+            var regMail = /^([a-z A-Z 0-9 \.-]+)@([a-z 0-9]+).([a-z]{2,8})(.[a-z]{2,8})?$/;
+            if (Email.trim() == "" || !regMail.test(Email)) {
+                    alert("Please enter valid email id");
+                    return false;
+                }
+            return true;
+        }
+
+    </script>
+</head>
+<body>
+    <!-- <div class="maincontainer"> -->
+        <div class="contact__maincontainer">
+            <div class="contact__container">
+                <div class="contact__container--mainText">
+                    <h1>Get In Touch !</h1>
+                </div>
+                <!-- <form onsubmit = "return validate()" action=""> Since hume botton click pe portfolio vali site nhi chahiye , form ke submit pe pe portfolio vali site chahiye> -->
+<!--Inside form onsubmit event , agar validate vala function kuch value return karega , if it's true toh onsubmit event work karega mast aur portfolio vali website dikhegi
+butttttttt agar false return kiya validate vale function ne that means form hi submit nhi hua (onsubmit event is disabled), aur vhi ka vhi page dikhega-->  
+                <form onsubmit = "return validate()" method="get" action="./Portfolio.html">
+                <!-- <form onsubmit = "return validate()" method="get">           -->
+                    <div class="contact__container--details">
+                    <div class="contact__details" id="name">
+                        <!-- <p class="contact__details--name">Name :&nbsp;</p> -->
+                        <i class="fa-solid fa-user"></i>
+                        <input  type="text" class="name" id="Iname" placeholder="Name">
+                    </div>
+
+                    <div class="contact__details" id="num">
+                        <!-- <p class="contact__details--name">Phone No :&nbsp;</p> -->
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="text" class="num" id="Inum" placeholder="Phone Number">
+                    </div>
+
+                    <div class="contact__details" id="email">
+                        <!-- <p class="contact__details--name">E-mail :&nbsp;</p> -->
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" class="email" id="Iemail" placeholder="Email">
+                    </div>
+
+                    <div class="contact__details" id="mess">
+                        <p class="contact__details--name">Message :&nbsp;</p>
+                        <!-- <i class="fa-solid fa-message-dots" height="16" width="16"></i> -->
+                        <!-- <input type="text" class="mess" id="mess" placeholder="Message"> -->
+                        <input class="mess"  rows="15" cols="22">
+                    </div>
+
+                    <div class="contact__details">
+                        <div class="container-contactMe__submit">
+                            <button type="submit" class="submit--but" id="submit--but"><span class="submit--but__mainText">Submit</span></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div id="mode">
+                    <button id="lt" onclick="light()">light mode</button>
+                    <button id="drk" onclick="dark()">dark mode</button>
+                </div> -->
+            </div>
+            </form>
+        </div>
+    <!-- </div> -->
+</body>
+
+<script type="text/javascript">
+    var color = document.documentElement.style ;
+ 
+    function light() {
+    color.setProperty('--bg1', '#c2c2c4');
+    color.setProperty('--bg2', '#e2e2e4');
+    color.setProperty('--boxShadow', '#a1a1a3');
+    color.setProperty('--Shadow1', '#848486');
+    color.setProperty('--Shadow2', '#fcfcfe');
+    color.setProperty('--S1forI', '#ececee');
+    color.setProperty('--S2forI', '#8a8b8e');
+
+    document.getElementById('lt').style.display="none";
+    document.getElementById('drk').style.display="block";
+    }
+
+    function dark() {
+    color.setProperty('--bg1', '#020204');
+    color.setProperty('--bg2', '#323234');
+    color.setProperty('--boxShadow', '#010103');
+    color.setProperty('--Shadow1', '#040406');
+    color.setProperty('--Shadow2', '#444446');
+    color.setProperty('--S1forI', '#2a2a2c');
+    color.setProperty('--S2forI', '#020305');
+
+    document.getElementById('lt').style.display="block";
+    document.getElementById('drk').style.display="none";
+    }
+</script>
+
+</html>
