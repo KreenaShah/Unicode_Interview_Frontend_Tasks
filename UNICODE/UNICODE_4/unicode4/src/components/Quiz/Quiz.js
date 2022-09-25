@@ -82,6 +82,12 @@ const Quiz = ({ setPageNo, pageNo, name, sapId, selectedAnswers, setSelectedAnsw
     setShowScore(false);
   }
 
+  // const handleSelect=(ans)=>
+  // {
+  //   if(ans.isCorrect)
+  //   <div className='select'>Correct Answer</div>
+  // }
+
   return (
     <div>
       {showScore ? (
@@ -96,7 +102,10 @@ const Quiz = ({ setPageNo, pageNo, name, sapId, selectedAnswers, setSelectedAnsw
                     //   {ans.Answer} {ans.isCorrect && "Correct"} {ans.Answer == selectedAnswers[index].Answer && "Selected answer"}
                     // </div>
                     <div className="QuizRA" key={ind}>
-                    {ans.Answer} {ans.isCorrect && "Correct"} {ans.Answer == selectedAnswers[index].Answer && "Selected answer"}
+                    {ans.Answer} 
+                    {ans.isCorrect && <pre className='select'>Correct Answer</pre>} 
+                    {(ans.Answer == selectedAnswers[index].Answer && ans.isCorrect ) && <pre className='select'>Selected Answer : Correct</pre>} 
+                    {(ans.Answer == selectedAnswers[index].Answer && !ans.isCorrect ) && <pre className='wrong'>Selected Answer : Incorrect</pre>}
                     </div>
                   ))}
                 </div>
