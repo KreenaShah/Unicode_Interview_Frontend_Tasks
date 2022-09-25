@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './Quiz.css'
 
 const Quiz = ({ setPageNo, pageNo, name, sapId, selectedAnswers, setSelectedAnswers }) => {
 
@@ -85,34 +86,41 @@ const Quiz = ({ setPageNo, pageNo, name, sapId, selectedAnswers, setSelectedAnsw
     <div>
       {showScore ? (
         <div>
-          {name} [{sapId}] you have scored {score} out of {questionBank.length}
-            {questionBank.map((q, index) => (
-              <div key={index}>
-                {q.Question}
-                {q.AnswerOptions.map((ans, ind) => (
-                  <div key={ind}>{ans.Answer} {ans.isCorrect && "This correct"} {ans.Answer == selectedAnswers[index].Answer && "Selected answer"}</div>
-                ))}
-              </div>
-          ))}
-          <><button type='submit' onClick={resetQuiz}>Reset</button></>
+          <p className="QuizR">{name} [{sapId}] have scored {score} out of {questionBank.length}</p>
+          <div className="QuizRTable">
+              {questionBank.map((q, index) => (
+                <div className="QuizRQ" key={index}>
+                  {q.Question}
+                  {q.AnswerOptions.map((ans, ind) => (
+                    // <div className="QuizRA" key={ind}>
+                    //   {ans.Answer} {ans.isCorrect && "Correct"} {ans.Answer == selectedAnswers[index].Answer && "Selected answer"}
+                    // </div>
+                    <div className="QuizRA" key={ind}>
+                    {ans.Answer} {ans.isCorrect && "Correct"} {ans.Answer == selectedAnswers[index].Answer && "Selected answer"}
+                    </div>
+                  ))}
+                </div>
+            ))}
+          </div>
+
+          <div><button className="QuizRB" type='submit' onClick={resetQuiz}>Reset</button></div>
         </div>
+
       ):(
-        <>
+        <div className="quiz_table">
           <div>
-            <div>
-              <span>{currentQuestion + 1}</span>/{questionBank.length}
-            </div>
-            <div>
-              {questionBank[currentQuestion].Question}
+            <div className="quiz_QN">
+              <span className="quiz_QN" >{currentQuestion + 1}</span>/{questionBank.length}
+              <span className="quiz_Q">&nbsp;&nbsp;{questionBank[currentQuestion].Question}</span>
             </div>
           </div>
 
-          <div>
+          <div >
             {questionBank[currentQuestion].AnswerOptions.map((answer, index) =>(
-              <button onClick={() => handleAnswerResponse(answer)} key={index}>{answer.Answer}</button>
+              <button className="quiz_AO" onClick={() => handleAnswerResponse(answer)} key={index}>{answer.Answer}</button>
             ))}
           </div>
-        </>
+        </div>
         
       )
       }

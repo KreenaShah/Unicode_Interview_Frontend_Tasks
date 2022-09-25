@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route, Browser } from "react-router-dom";
+// import { BrowserRouter, Routes, Route, Browser } from "react-router-dom";
 import Header from './components/Header/Header'
-// import Home from './components/Home/Home'
 import Quiz from './components/Quiz/Quiz'
-// import Result from './components/Result/Result'
 
 function App() {
   const [name , setName] = useState("");
