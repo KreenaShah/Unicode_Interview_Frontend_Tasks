@@ -10,8 +10,4 @@ Just a gist of light mode
 ![Screenshot (313)](https://user-images.githubusercontent.com/102236893/226120752-c3ee8ad6-c1dc-4dc2-b226-7bf87aa7bbbf.png)
 
 Task 4 : React Quiz App
-
-![Screenshot (307)](https://user-images.githubusercontent.com/102236893/226105529-14901bef-b0ed-4422-9334-2ada4faa9fc6.png)
-![Screenshot (308)](https://user-images.githubusercontent.com/102236893/226105532-d1a21907-ec3f-402e-b75b-91cecd927e4d.png)
-![Screenshot (309)](https://user-images.githubusercontent.com/102236893/226105537-f5e88564-ac7b-40d3-90b5-d47e49b34914.png)
-![Screenshot (310)](https://user-images.githubusercontent.com/102236893/226105540-4f40bcf2-a6ec-42d0-97d0-267a4dc206b2.png)
+![Group 2](https://user-images.githubusercontent.com/102236893/226121650-2acf9d98-9e58-4db6-a69f-74182775dd63.png)
