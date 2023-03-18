@@ -3,6 +3,11 @@
 Task 1 : Portfolio (Using HTML , CSS , Javascript)
 ![Group 1](https://user-images.githubusercontent.com/102236893/226120523-fac43610-733a-4999-8ea6-6853979f92df.png)
 
+Toggle between modes :)
+Just a gist of light mode
+![Screenshot (313)](https://user-images.githubusercontent.com/102236893/226120663-7c54f721-2487-41d3-91b3-bf27012c8b30.png)
+
+
 
 Task 4 : React Quiz App
 
