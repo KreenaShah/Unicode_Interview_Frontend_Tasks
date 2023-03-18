@@ -2,7 +2,7 @@
 
 Task 1 : Portfolio (Using HTML , CSS , Javascript)
 ![Group 1](https://user-images.githubusercontent.com/102236893/226120523-fac43610-733a-4999-8ea6-6853979f92df.png)
-![Screenshot (270) 1](https://user-images.githubusercontent.com/102236893/226121237-a4b4ca0e-5be7-4534-81f7-9578d68301b7.png)
+<!-- ![Screenshot (270) 1](https://user-images.githubusercontent.com/102236893/226121237-a4b4ca0e-5be7-4534-81f7-9578d68301b7.png) -->
 
 Toggle between modes :)
 
