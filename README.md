@@ -5,9 +5,7 @@ Task 1 : Portfolio (Using HTML , CSS , Javascript)
 
 Toggle between modes :)
 Just a gist of light mode
-![Screenshot (313)](https://user-images.githubusercontent.com/102236893/226120663-7c54f721-2487-41d3-91b3-bf27012c8b30.png)
-
-
+![Screenshot (313)](https://user-images.githubusercontent.com/102236893/226120752-c3ee8ad6-c1dc-4dc2-b226-7bf87aa7bbbf.png)
 
 Task 4 : React Quiz App
 
