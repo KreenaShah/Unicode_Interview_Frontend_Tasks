@@ -1,5 +1,9 @@
 # Unicode_Interview_Frontend_Tasks
 
+Task 1 : Portfolio (Using HTML , CSS , Javascript)
+![Group 1](https://user-images.githubusercontent.com/102236893/226120523-fac43610-733a-4999-8ea6-6853979f92df.png)
+
+
 Task 4 : React Quiz App
 
 ![Screenshot (307)](https://user-images.githubusercontent.com/102236893/226105529-14901bef-b0ed-4422-9334-2ada4faa9fc6.png)
